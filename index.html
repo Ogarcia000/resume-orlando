@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -83,6 +83,19 @@
             } else {
                 darkModeToggle.textContent = 'Toggle Dark Mode';
             }
+        });
+
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                darkModeToggle.style.top = '-50px';
+            } else {
+                // Scrolling up
+                darkModeToggle.style.top = '10px';
+            }
+            lastScrollTop = scrollTop;
         });
     </script>
 </body>
