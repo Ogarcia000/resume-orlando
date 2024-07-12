@@ -33,6 +33,7 @@ body {
     top: 10px;
     left: 10px;
     z-index: 1000;
+    transition: top 0.3s;
 }
 ul.list-unstyled {
     padding-left: 20px;
