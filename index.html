@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container text-center">
+        <header class="my-5">
+            <h1 class="mt-4">Orlando Garcia Perez</h1>
+        </header>
+
+        <section>
+            <h2 class="section-title">Summary</h2>
+            <p>An enthusiastic and dedicated professional with extensive experience in web development and a passion for creating innovative solutions.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <ul class="list-unstyled">
+                <li>Bachelor of Science in Computer Science, Interamerican University of Puerto Rico, 2021-2024</li>
+                <br>
+                <li>Associate of Science in Computer Science, Interamerican University of Puerto Rico, 2018-2021</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            <ul class="list-unstyled">
+                <li>
+                    <strong>Computer Center</strong>, Tech solutions, UIPR Arecibo Campus, 2021:
+                    <br>
+                    <ul>
+                        <li>Responsible for preventive maintenance.</li>
+                        <li>Diagnosis and troubleshooting</li>
+                        <li>Service and customer support.</li>
+                        <li>Hardware installation and configuration.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Skills</h2>
+            <ul class="list-unstyled">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Angular, Svelte</li>
+                <li>Node.js, Express, MongoDB</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Awards & Certifications</h2>
+            <ul class="list-unstyled">
+                <li>Certified Web Developer, WebCert, 2021</li>
+                <li>Best Innovative Project, Tech Conference, 2020</li>
+            </ul>
+        </section>
+
+        <footer class="footer mt-5">
+            <p>&copy; 2024 Orlando Garcia Perez. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <button id="darkModeToggle" class="btn btn-secondary btn-dark-mode">Toggle Dark Mode</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = 'Toggle Light Mode';
+            } else {
+                darkModeToggle.textContent = 'Toggle Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>
