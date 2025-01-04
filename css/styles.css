@@ -55,12 +55,82 @@ body.dark-mode {
 .project-card {
     border-radius: 15px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: var(--bg-color);
+    border: none;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.project-tech-img {
+    height: 200px;
+    object-fit: contain;
+    padding: 2rem;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-tech-img {
+    transform: scale(1.05);
+}
+
+.tech-stack .badge {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Dark mode adjustments for project cards */
+body.dark-mode .project-card {
+    background: #34495e;
+}
+
+body.dark-mode .project-tech-img {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+}
+
+body.dark-mode .card-title {
+    color: #ecf0f1;
+}
+
+body.dark-mode .card-text {
+    color: #bdc3c7;
 }
 
 .social-links a {
