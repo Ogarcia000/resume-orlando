@@ -1,31 +1,55 @@
+<!--
+    Portfolio Website - Orlando Garcia Perez
+    Author: Orlando Garcia
+    Description: Professional portfolio showcasing skills, projects and experience
+    Version: 1.0
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document metadata and character encoding -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO meta tags -->
     <meta name="description" content="Orlando Garcia Perez - Full Stack Developer & Computer Science Student Portfolio">
     <meta name="keywords" content="web developer, full stack, portfolio, Orlando Garcia, computer science">
     <title>Orlando Garcia Perez | Portfolio</title>
     
-    <!-- CSS -->
+    <!-- External CSS Dependencies -->
+    <!-- Bootstrap 5 - For responsive grid system and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome - For professional icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS (Animate On Scroll) - For scroll animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
+    <!-- Dark Mode Toggle Button
+         - Fixed position in top-right corner
+         - Toggles between light/dark themes
+         - Uses Font Awesome moon/sun icons
+    -->
     <button id="darkModeToggle" class="btn">
         <i class="fas fa-moon"></i>
     </button>
 
-    <!-- Hero Section -->
+    <!-- Hero Section
+         - Full viewport height section
+         - Gradient background
+         - Profile image and introduction
+         - Social media links
+    -->
     <section class="hero-section">
         <div class="container hero-content text-center" data-aos="fade-up">
             <img src="https://via.placeholder.com/150" alt="Orlando Garcia" class="rounded-circle mb-4" width="150">
             <h1 class="display-4 fw-bold mb-3">Orlando Garcia Perez</h1>
             <p class="lead mb-4">Full Stack Developer & Computer Science Student</p>
             <div class="social-links">
+                <!-- Social media links with accessibility labels -->
                 <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                 <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                 <a href="#" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
@@ -33,15 +57,22 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section
+         - Two-column layout
+         - Personal introduction
+         - Key skills and services
+         - Uses Font Awesome icons for visual appeal
+    -->
     <section class="section" id="about">
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-5">About Me</h2>
             <div class="row">
+                <!-- Personal Introduction Column -->
                 <div class="col-md-6">
                     <h3>Who I Am</h3>
                     <p class="lead">An enthusiastic and dedicated professional with extensive experience in web development and a passion for creating innovative solutions. Currently pursuing a Bachelor's degree in Computer Science at Interamerican University of Puerto Rico.</p>
                 </div>
+                <!-- Skills and Services Column -->
                 <div class="col-md-6">
                     <h3>What I Do</h3>
                     <ul class="list-unstyled">
@@ -55,12 +86,19 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section
+         - Progress bars for technical skills
+         - Animated on scroll
+         - Percentage-based visualization
+         - Two-column layout for better organization
+    -->
     <section class="section bg-light" id="skills">
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-5">Technical Skills</h2>
             <div class="row">
+                <!-- Left Column Skills -->
                 <div class="col-md-6">
+                    <!-- HTML/CSS Skill Bar -->
                     <div class="mb-4">
                         <div class="d-flex justify-content-between">
                             <span>HTML/CSS</span>
@@ -70,6 +108,7 @@
                             <div class="skill-progress" style="width: 90%"></div>
                         </div>
                     </div>
+                    <!-- JavaScript Skill Bar -->
                     <div class="mb-4">
                         <div class="d-flex justify-content-between">
                             <span>JavaScript</span>
@@ -79,6 +118,7 @@
                             <div class="skill-progress" style="width: 85%"></div>
                         </div>
                     </div>
+                    <!-- React Skill Bar -->
                     <div class="mb-4">
                         <div class="d-flex justify-content-between">
                             <span>React</span>
@@ -89,7 +129,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- Right Column Skills -->
                 <div class="col-md-6">
+                    <!-- Node.js Skill Bar -->
                     <div class="mb-4">
                         <div class="d-flex justify-content-between">
                             <span>Node.js</span>
@@ -99,6 +141,7 @@
                             <div class="skill-progress" style="width: 75%"></div>
                         </div>
                     </div>
+                    <!-- MongoDB Skill Bar -->
                     <div class="mb-4">
                         <div class="d-flex justify-content-between">
                             <span>MongoDB</span>
@@ -108,6 +151,7 @@
                             <div class="skill-progress" style="width: 70%"></div>
                         </div>
                     </div>
+                    <!-- Git Skill Bar -->
                     <div class="mb-4">
                         <div class="d-flex justify-content-between">
                             <span>Git</span>
@@ -122,11 +166,17 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience Section
+         - Timeline layout
+         - Work experience and education history
+         - Visual timeline with dots and lines
+         - Animated entrance effects
+    -->
     <section class="section" id="experience">
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-5">Experience & Education</h2>
             <div class="timeline">
+                <!-- Work Experience Item -->
                 <div class="timeline-item">
                     <h4>Computer Center Tech Support</h4>
                     <p class="text-muted">UIPR Arecibo Campus | 2021</p>
@@ -136,6 +186,7 @@
                         <li>Managed hardware installation and configuration</li>
                     </ul>
                 </div>
+                <!-- Education Items -->
                 <div class="timeline-item">
                     <h4>Bachelor of Science in Computer Science</h4>
                     <p class="text-muted">Interamerican University of Puerto Rico | 2021-2024</p>
@@ -150,14 +201,22 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section
+         - Card-based layout
+         - Project screenshots and descriptions
+         - Technology badges
+         - Hover effects and animations
+    -->
     <section class="section bg-light" id="projects">
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-5">Featured Projects</h2>
             <div class="row g-4">
+                <!-- React Project Card -->
                 <div class="col-md-4">
                     <div class="project-card">
-                        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" class="card-img-top project-tech-img" alt="React Project">
+                        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" 
+                             class="card-img-top project-tech-img" 
+                             alt="React Project">
                         <div class="card-body">
                             <h5 class="card-title">React Task Manager</h5>
                             <p class="card-text">Modern task management application built with React, Redux, and Firebase. Features real-time updates and responsive design.</p>
@@ -170,9 +229,12 @@
                         </div>
                     </div>
                 </div>
+                <!-- Node.js Project Card -->
                 <div class="col-md-4">
                     <div class="project-card">
-                        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" class="card-img-top project-tech-img" alt="Node.js Project">
+                        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" 
+                             class="card-img-top project-tech-img" 
+                             alt="Node.js Project">
                         <div class="card-body">
                             <h5 class="card-title">API REST E-commerce</h5>
                             <p class="card-text">Robust e-commerce backend built with Node.js, Express, and MongoDB. Includes authentication, payment processing, and order management.</p>
@@ -185,9 +247,12 @@
                         </div>
                     </div>
                 </div>
+                <!-- Python Project Card -->
                 <div class="col-md-4">
                     <div class="project-card">
-                        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" class="card-img-top project-tech-img" alt="Python Project">
+                        <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" 
+                             class="card-img-top project-tech-img" 
+                             alt="Python Project">
                         <div class="card-body">
                             <h5 class="card-title">Data Analytics Dashboard</h5>
                             <p class="card-text">Interactive dashboard built with Python, Flask, and Pandas. Visualizes complex data sets with interactive charts and real-time filtering.</p>
@@ -204,7 +269,12 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section
+         - Call to action
+         - Social media links
+         - Email button
+         - Animated entrance
+    -->
     <section class="section" id="contact">
         <div class="container text-center" data-aos="fade-up">
             <h2 class="mb-5">Get In Touch</h2>
@@ -218,16 +288,22 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer
+         - Copyright information
+         - Dark background
+    -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p>&copy; 2024 Orlando Garcia Perez. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- JavaScript Dependencies -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
